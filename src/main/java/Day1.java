@@ -1,5 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Day1 {
@@ -12,6 +13,7 @@ public class Day1 {
        System.setProperty("webdriver.chrome.logfile","chromedriver.log");
        System.setProperty("webdriver.chrome.verboseLogging","true");
        WebDriver driver = new ChromeDriver();
+
        driver.get("https://www.cricbuzz.com/");
      String value=  driver.findElement(By.xpath("//div[contains(@class,\"carousal-item\")][1]//span[contains(@class,\"wb:text-xxs\")]")).getText();
      System.out.println(value);
