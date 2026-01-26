@@ -30,4 +30,11 @@ public class TwoDriverConflict {
         return drivers.get(browser);
 
     }
+    public static void closeDriver(String browser) {
+        browser = browser.toLowerCase();
+        if(drivers.containsKey(browser)) {
+            drivers.get(browser).close();
+        }
+        drivers.remove(browser);
+    }
 }
