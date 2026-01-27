@@ -12,6 +12,7 @@ public class TwoDriverConflict {
     //answer:using hashmap we can slove this issue
     private static HashMap<String, WebDriver> drivers=new HashMap<>();
     public static WebDriver getDriver(String browser) {
+
         browser = browser.toLowerCase();
         if(!drivers.containsKey(browser)) {
             switch (browser){
