@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation Suite">
+    <listeners>
+        <listener class-name="Listerners.TestListerners"></listener>
+    </listeners>
+    <test name="All Testcase">
+        <classes>
+            <class name="DAY7Test"/>
+
+
+        </classes>
+    </test>
+</suite>

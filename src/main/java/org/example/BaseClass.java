@@ -8,5 +8,8 @@ public class BaseClass {
     public static WebDriver getDriver() {
         return TwoDriverConflict.getDriver("chrome");
     }
+    public static void quitDriver() {
+         TwoDriverConflict.closeDriver("chrome");
+    }
 
 }
